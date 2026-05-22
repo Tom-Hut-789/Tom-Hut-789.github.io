@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "Microsoft Yahei", sans-serif;
+    scroll-behavior: smooth;
+    transition: all 0.3s ease;
+}
+
+:root {
+    --bg-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --sub-text: #666;
+    --primary: #2980b9;
+    --border: #eee;
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #e5e5e5;
+    --sub-text: #aaa;
+    --primary: #42a5f5;
+    --border: #333;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.7;
+    padding-top: 60px;
+}
+
+/* 导航栏 */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--card-bg);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 999;
+}
+
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dark-btn, .github-nav-btn {
+    border: none;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.dark-btn {
+    background: var(--primary);
+    color: #fff;
+}
+
+.github-nav-btn {
+    background: #24292f;
+    color: #fff;
+}
+
+/* 容器 */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 头部个人信息 */
+.header {
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: var(--sub-text);
+    margin-bottom: 12px;
+}
+
+.contact {
+    margin: 15px 0;
+}
+
+.contact span {
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+.badge-group {
+    margin-top: 15px;
+}
+
+.badge {
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+    margin: 4px;
+}
+
+/* GitHub 主页大按钮 */
+.home-github-btn-wrap {
+    margin-top: 25px;
+}
+.home-github-btn {
+    display: inline-block;
+    background: #24292f;
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.home-github-btn:hover {
+    background: #444;
+}
+
+/* 板块 */
+.section {
+    margin-bottom: 35px;
+}
+
+.section h2 {
+    font-size: 22px;
+    color: var(--primary);
+    border-left: 4px solid var(--primary);
+    padding-left: 12px;
+    margin-bottom: 15px;
+}
+
+/* 卡片 */
+.card {
+    background: var(--card-bg);
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.card p, .card li {
+    font-size: 15px;
+    color: var(--sub-text);
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.card li {
+    margin: 6px 0;
+}
+
+/* 页脚 */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    color: var(--sub-text);
+    font-size: 14px;
+    border-top: 1px solid var(--border);
+}
+.footer-link {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* 响应式适配手机 */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 28px;
+    }
+    .contact span {
+        display: block;
+        margin: 5px 0;
+    }
+    .container {
+        padding: 10px;
+    }
+    .nav-container {
+        flex-direction: column;
+        gap:8px;
+    }
+}
