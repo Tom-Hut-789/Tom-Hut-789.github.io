@@ -1,0 +1,17 @@
+# 忽略所有已提交的个人主页文件（不再追踪更新）
+index.html
+style.css
+script.js
+
+# 系统/编辑器自动生成的垃圾文件
+.DS_Store
+*.log
+.vscode/
+.idea/
+*.swp
+*.bak
+*.tmp
+
+# 忽略本地环境文件
+.env
+.local
