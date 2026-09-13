@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>邓淼鑫 | Android开发 个人主页</title>
+    <title>邓淼鑫 | 个人主页</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,21 +15,20 @@
             <button id="darkBtn" class="dark-btn">🌙 暗黑模式</button>
         </div>
     </nav>
-
     <div class="container">
         <!-- 个人信息 -->
         <header class="header">
             <h1>邓淼鑫</h1>
-            <p class="subtitle">Android开发 | 新一代电子信息技术研究生</p>
+            <p class="subtitle">技术应用与工程开发 | 新一代电子信息技术研究生</p>
             <div class="contact">
-                <span>📧 mrdengmiaoxin@outlook.com</span>
+                <span>📧 mrdengmiaoxin@163.com</span>
             </div>
             <div class="badge-group">
                 <span class="badge">Android</span>
                 <span class="badge">Java</span>
                 <span class="badge">C/C++</span>
                 <span class="badge">Python</span>
-                <span class="badge">嵌入式</span>
+                <span class="badge">MCU嵌入式</span>
             </div>
             <!-- 个人主页跳转GitHub按钮 -->
             <div class="home-github-btn-wrap">
@@ -38,7 +37,6 @@
                 </a>
             </div>
         </header>
-
 	<section class="section">
             <h2>🎓 在校成果</h2>
             <div class="card">
@@ -50,46 +48,44 @@
                 <p>成果：移动边缘计算领域EI论文1篇、软件著作权1项</p>
             </div>
         </section>
-
         <!-- 项目经历 -->
         <section class="section">
             <h2>💻 项目经历</h2>
-
+            <div class="card">
+                <h3>SklueCode | 独立开发者 2026.05-2026.06</h3>
+                <p>基于 Python 3.11+ 开发的终端优先（TUI）AI 助手：支持流式模型输出、多轮上下文、可配置 OpenAI / Anthropic 提供商、本地会话持久化；Chapter 02 起扩展为编码代理，内置 read_file、write_file、edit_file、run_command、find_files、search_code 六种工具，文件访问沙箱化、shell 命令执行需人工确认。</p>
+            </div>
             <div class="card">
                 <h3>基于PDR的用户终端定位应用研究 | 负责人 2025.07-2026.04</h3>
                 <p>针对PDR轨迹漂移问题，采用虚拟地标做轨迹修正，多源融合实现行人轨迹匹配；基于Android Studio开发原生定位App，C/C++编写核心算法，Java多线程完成传感器采样、轨迹解算；最大定位误差约3米，1秒内定位查准率/查全率达90%。</p>
             </div>
-
             <div class="card">
                 <h3>FPGA数字手写体识别 | 开发组员 2022.07-2022.08</h3>
                 <p>使用PyTorch训练LeNet-5网络，识别准确率97%；Quartus搭建FPGA开发环境，Eclipse完成CNN模型硬件化，在Cyclone V开发板实现端侧低功耗手写数字识别。</p>
             </div>
-
             <div class="card">
                 <h3>面向MEC任务卸载仿真平台 | 独立开发者 2021.10-2022.02</h3>
                 <p>基于.NET Framework + WPF开发仿真平台，设计任务卸载最优调度算法；采用UI/后台多线程分离架构，独立获得软件著作权1项。</p>
             </div>
-
             <div class="card">
                 <h3>Python你画我猜桌面游戏 | 独立开发者 2021.09-2021.11</h3>
                 <p>基于C/S架构，Python+Socket实现多线程服务端；自定义协议解决粘包；Tkinter完成登录、房间、画板、猜词全流程。</p>
             </div>
         </section>
-
         <!-- 专业技能 -->
         <section class="section">
             <h2>🛠️ 专业技能</h2>
             <div class="card">
                 <ul>
-                    <li>编程语言：Java、C/C++、Python，熟练OOP、多线程、Synchronized并发编程</li>
-                    <li>移动端：Android Studio 原生开发、传感器应用、JNI/NDK 算法嵌入</li>
+                    <li>编程基础：理解OOP特性、计算机网络常用协议，掌握常用的数据结构、SQL语句、Linux指令，掌握Python、Java、C/C++</li>
+                    <li>移动端：基于Android Studio的app开发、传感器应用、JNI/NDK算法嵌入，常用adb命令，appium自动化测试</li>
                     <li>基础能力：数据结构与算法、计算机网络、嵌入式、FPGA开发、深度学习模型部署</li>
-                    <li>工程协作：熟练 Git / GitHub 版本控制与团队协作，熟练 Trae、OpenCode AI 辅助开发</li>
+                    <li>工程协作：熟练Git/GitHub版本控制与团队协作</li>
+                    <li>Agent应用：熟悉Trae、ClaudeCode、OpenCode，基于skill结构化沉淀工作流prompt，理解LLM、MCP、Agent模式等概念，基于LLM稳定、可控地完成复杂任务</li>
                 </ul>
             </div>
         </section>
     </div>
-
     <footer class="footer">
         <p>© 2026 邓淼鑫 | GitHub Pages 个人主页</p>
         <p style="margin-top:8px;">
@@ -98,7 +94,6 @@
             </a>
         </p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
